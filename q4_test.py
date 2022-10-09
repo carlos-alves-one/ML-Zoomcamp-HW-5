@@ -9,7 +9,7 @@ import requests
 # Declare our URL for our localhost
 url = "http://localhost:9696"
 
-
+# Declare dictionary to score a customer
 client = {"reports": 0, "share": 0.245, "expenditure": 3.438, "owner": "yes"}
 
 

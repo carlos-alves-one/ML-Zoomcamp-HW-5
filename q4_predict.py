@@ -51,7 +51,7 @@ def predict():
     return jsonify(result)
 
 # Declare the main method of the python file
-if __name == "__main":
+if __name__ == "__main__":
 
     # Specify the local host we're running our app
     app.run(debug=True, host='0.0.0.0', port=9696)
