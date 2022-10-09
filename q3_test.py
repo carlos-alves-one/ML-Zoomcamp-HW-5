@@ -6,10 +6,13 @@
 # Import pickle library to load files
 import pickle
 
-# Create function for loafing the pickle files
+# Create function for loading the pickle files
 def load(filename):
+    with open(filename, 'rb') as f_in:
+        return pickle.load(f_in)
 
-    
+
+
 
 # Declare dictionary to score a customer
 customer = {"reports": 0, "share": 0.001694, "expenditure": 0.12, "owner": "yes"} 
