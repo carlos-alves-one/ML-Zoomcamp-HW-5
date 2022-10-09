@@ -23,3 +23,4 @@ model = load('model1.bin')
 # Use decorator to add extra functionality to the function predict
 @app.route('/predict', methods=['POST'])
 
+# Create a function to predict the probability of getting a credit card
