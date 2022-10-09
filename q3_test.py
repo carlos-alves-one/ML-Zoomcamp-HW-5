@@ -26,3 +26,5 @@ y_pred = model.predict_proba(X)[0, 1]
 
 # Print the prediction of our model
 print(y_pred)
+
+# Answer for quastion 3 : 0.16213414434326598
