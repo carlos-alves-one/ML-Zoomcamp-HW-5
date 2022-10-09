@@ -24,3 +24,9 @@ model = load('model1.bin')
 @app.route('/predict', methods=['POST'])
 
 # Create a function to predict the probability of getting a credit card
+def predict():
+
+    # Use request to the JSON file to python dictionary
+    customer = request.get_json()
+
+    
