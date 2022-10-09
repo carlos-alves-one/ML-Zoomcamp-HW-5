@@ -35,4 +35,7 @@ def predict():
     # Call model using the method predict proba with X and get the probability
     y_pred = model.predict_proba(X)[0, 1]
 
+    # Define the threshold of the churn
+    churn = y_pred >= 0.5
+
     
