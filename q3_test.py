@@ -17,3 +17,6 @@ model = load('model1.bin')
 
 # Declare dictionary to score a customer
 customer = {"reports": 0, "share": 0.001694, "expenditure": 0.12, "owner": "yes"} 
+
+# Use our dictionary vectorizer to transform the customer score and store with X
+X = dv.transform([customer])
