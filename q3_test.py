@@ -20,3 +20,7 @@ customer = {"reports": 0, "share": 0.001694, "expenditure": 0.12, "owner": "yes"
 
 # Use our dictionary vectorizer to transform the customer score and store with X
 X = dv.transform([customer])
+
+# Use our model with the function proba and store with y_pred
+y_pred = model.predict_proba(X)[0, 1]
+
