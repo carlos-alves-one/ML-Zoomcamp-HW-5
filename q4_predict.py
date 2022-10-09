@@ -20,3 +20,6 @@ def load(filename):
 dv = load('dv.bin')
 model = load('model1.bin')
 
+# Use decorator to add extra functionality to the function predict
+@app.route('/predict', methods=['POST'])
+
