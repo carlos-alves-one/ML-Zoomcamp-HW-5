@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 gunicorn = "*"
 scikit-learn = "==1.0.2"
+flask = "*"
 
 [dev-packages]
 awsebcli = "*"
