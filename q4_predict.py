@@ -32,4 +32,7 @@ def predict():
     # Use the customer data into feature matrix using our dictionary vectorizer transform method
     X = dv.transform([customer])
 
+    # Call model using the method predict proba with X and get the probability
+    y_pred = model.predict_proba(X)[0, 1]
+
     
