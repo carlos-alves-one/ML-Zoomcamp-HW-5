@@ -12,5 +12,5 @@ url = "http://localhost:9696"
 # Declare dictionary to score a customer
 client = {"reports": 0, "share": 0.245, "expenditure": 3.438, "owner": "yes"}
 
-
+# Use the POST request and turn it into python dictionary with JSON method
 requests.post(url, json=client).json()
