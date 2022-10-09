@@ -47,4 +47,7 @@ def predict():
     # Returns the prediction of churning
     return jsonify(result)
 
+# Declare the main method of thhe python file
+if __name == "__main":
+
 
