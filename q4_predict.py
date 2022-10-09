@@ -29,4 +29,7 @@ def predict():
     # Use request to the JSON file to python dictionary
     customer = request.get_json()
 
+    # Use the customer data into feature matrix using our dictionary vectorizer transform method
+    X = dv.transform([customer])
+
     
