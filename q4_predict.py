@@ -38,4 +38,10 @@ def predict():
     # Define the threshold of the churn
     churn = y_pred >= 0.5
 
+    # Prepare our response to JSON
+    result = {
+        'churn_probability': float(y_pred),
+        'churn': bool(churn)
+    }
+
     
