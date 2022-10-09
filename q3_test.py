@@ -11,8 +11,9 @@ def load(filename):
     with open(filename, 'rb') as f_in:
         return pickle.load(f_in)
 
-
-
+# Load and store the files dictionary vectorizer and the model
+dv = load('dv.bin')
+model = load('model1.bin')
 
 # Declare dictionary to score a customer
 customer = {"reports": 0, "share": 0.001694, "expenditure": 0.12, "owner": "yes"} 
