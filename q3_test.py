@@ -24,3 +24,5 @@ X = dv.transform([customer])
 # Use our model with the function proba and store with y_pred
 y_pred = model.predict_proba(X)[0, 1]
 
+# Print the prediction of our model
+print(y_pred)
