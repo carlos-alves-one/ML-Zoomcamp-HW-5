@@ -44,4 +44,7 @@ def predict():
         'churn': bool(churn)
     }
 
-    
+    # Returns the prediction of churning
+    return jsonify(result)
+
+
