@@ -6,6 +6,11 @@
 # Import the library requests
 import requests
 
-url = "YOUR_URL"
+# Declare our URL for our localhost
+url = "http://localhost:9696"
+
+
 client = {"reports": 0, "share": 0.245, "expenditure": 3.438, "owner": "yes"}
+
+
 requests.post(url, json=client).json()
